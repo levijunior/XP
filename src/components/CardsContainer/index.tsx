@@ -8,6 +8,7 @@ type Props = {
 const Wapper = styled('div', {
   position: 'relative',
   flexGrow: 1,
+  overflowX: 'hidden',
   overflowY: 'auto',
   // TODO: styles for scrollbar
 });
@@ -21,6 +22,7 @@ const Title = styled('h3', {
 
 const CardsList = styled('div', {
   display: 'flex',
+  margin: '0 -$2',
 });
 
 function CardsContainer({ children, title }: Props) {
