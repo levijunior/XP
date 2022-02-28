@@ -1,21 +1,25 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": false,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "target": "es2017",
+    "module": "commonjs",
+    "lib": ["es6"],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
+    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "$theme": ["./src/assets/theme"],
+      "$components": ["./src/components"]
+    }
   },
-  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

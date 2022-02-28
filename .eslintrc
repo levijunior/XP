@@ -2,9 +2,13 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "import"
   ],
   "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
     "import/resolver": {
       "node": {
         "extensions": [
@@ -13,6 +17,9 @@
           ".ts",
           ".tsx"
         ]
+      },
+      "typescript" : {
+        "alwaysTryTypes": true
       }
     }
   },
