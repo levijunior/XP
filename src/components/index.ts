@@ -1,11 +1,15 @@
-import ComponentPageWapper from './PageWapper';
-import ComponentSearchBar from './SearchBar';
-import ComponentCardAlbum from './CardAlbum';
-import ComponentCardsContainer from './CardsContainer';
-import ComponentButton from './Button';
+import PageWapper from './PageWapper';
+import SearchBar from './SearchBar';
+import CardAlbum from './CardAlbum';
+import CardsContainer from './CardsContainer';
+import Button from './Button';
+import InputText from './InputText';
 
-export const PageWapper = ComponentPageWapper;
-export const SearchBar = ComponentSearchBar;
-export const CardAlbum = ComponentCardAlbum;
-export const CardsContainer = ComponentCardsContainer;
-export const Button = ComponentButton;
+export {
+  PageWapper,
+  SearchBar,
+  CardAlbum,
+  CardsContainer,
+  Button,
+  InputText,
+};

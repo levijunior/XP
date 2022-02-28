@@ -1,4 +1,4 @@
-import { styled } from '$theme';
+import { styled } from '$themes';
 
 const PageWapper = styled('main', {
   padding: '$4',

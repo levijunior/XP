@@ -3,6 +3,6 @@ import { PageWapper, SearchBar } from '$components';
 
 export default React.memo(() => (
   <PageWapper>
-    Page
+    <SearchBar />
   </PageWapper>
 ));

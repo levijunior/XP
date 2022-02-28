@@ -1,5 +1,5 @@
 import { blackA, slate } from '@radix-ui/colors';
-import { styled } from '$theme';
+import { styled } from '$themes';
 
 const Button = styled('button', {
   all: 'unset',

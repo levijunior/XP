@@ -3,8 +3,9 @@ import { globalCss } from '@stitches/react';
 import Dashboard from '../pages/Dashboard';
 
 const globalStyles = globalCss({
-  '*': { margin: 0, padding: 0 },
   body: {
+    margin: 0,
+    padding: 0,
     backgroundColor: '#333',
     color: 'white',
     fontFamily: 'Montserrat, sans-serif',

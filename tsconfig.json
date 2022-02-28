@@ -17,7 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "$theme": ["./src/assets/theme"],
+      "$themes": ["./src/styles/themes"],
       "$components": ["./src/components"]
     }
   },
