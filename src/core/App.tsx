@@ -1,5 +1,6 @@
 import React from 'react';
 import { globalCss } from '@stitches/react';
+import getAuthCode from 'src/shared/api/authorize';
 import Dashboard from '../pages/Dashboard';
 
 const globalStyles = globalCss({
@@ -14,6 +15,9 @@ const globalStyles = globalCss({
 
 export default React.memo(() => {
   globalStyles();
+  const code = new URLSearchParams(window.location.search).get('code');
+
+  if (!code) getAuthCode();
 
   return (
     <Dashboard />
