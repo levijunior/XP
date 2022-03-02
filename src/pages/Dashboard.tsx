@@ -9,6 +9,6 @@ export default React.memo(() => (
     <CardsContainer title="Álbuns buscados recentemente">
       <CardAlbum />
     </CardsContainer>
-    <p>bottom</p>
+    <p>Player</p>
   </PageWapper>
 ));

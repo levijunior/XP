@@ -35,10 +35,10 @@ const Title = styled('p', {
   variants: {
     color: {
       album: {
-        color: '#FAFAFA'
+        color: '#FAFAFA',
       },
       artist: {
-        color: '#999'
+        color: '#999',
       },
     },
   },
@@ -51,7 +51,7 @@ function Card() {
   return (
     <CardWapper>
       <CardImg>
-        <img src="https://picsum.photos/200" alt='Album Cover Image'  />
+        <img src="https://picsum.photos/200" alt="Album Cover" />
       </CardImg>
       <Title>
         Nome do Álbum

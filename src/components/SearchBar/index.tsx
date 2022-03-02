@@ -22,6 +22,7 @@ function SearchBar() {
       <InputText
         placeholder="Comece a escrever ..."
         aria-placeholder="Digite sua busca"
+        autoFocus
       />
     </Wapper>
   );
