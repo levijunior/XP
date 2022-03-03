@@ -34,6 +34,6 @@ export default React.memo(() => {
   }, [searchQuery]);
 
   return (
-    <SearchBar handleSearch={setSearchQuery} disabled={disableSearch} />
+    <SearchBar handleSearch={setSearchQuery} readOnly={disableSearch} />
   );
 });

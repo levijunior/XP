@@ -1,24 +1,17 @@
 import { styled } from '$themes';
-import * as LabelPrimitive from '@radix-ui/react-label';
 import InputText from '../InputText';
+import { Label } from './Label';
 
 interface Props {
   handleSearch: (query: string) => void;
-  disabled?: boolean;
+  readOnly?: boolean;
 }
 
 const Wapper = styled('div', {
   marginBottom: '$6',
 });
 
-const Label = styled(LabelPrimitive.Root, {
-  fontSize: 12,
-  fontWeight: 500,
-  color: '#FAFAFA',
-  userSelect: 'none',
-});
-
-function SearchBar({ handleSearch, disabled }: Props) {
+function SearchBar({ handleSearch, readOnly }: Props) {
   return (
     <Wapper>
       <Label>
@@ -28,8 +21,8 @@ function SearchBar({ handleSearch, disabled }: Props) {
         placeholder="Comece a escrever ..."
         aria-placeholder="Digite sua busca"
         onChange={(e) => handleSearch(e.target.value)}
-        autoFocus={!disabled}
-        readOnly={disabled}
+        readOnly={readOnly}
+        autoFocus
       />
     </Wapper>
   );
