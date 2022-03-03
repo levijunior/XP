@@ -19,9 +19,11 @@
     "baseUrl": ".",
     "paths": {
       "$themes": ["./src/styles/themes"],
+      "$containers": ["./src/containers"],
       "$components": ["./src/components"],
       "$context": ["./src/shared/store/context"],
-      "$constants/*": ["./src/shared/constants/*"]
+      "$constants/*": ["./src/shared/constants/*"],
+      "$api": ["./src/shared/api"]
     }
   },
   "references": [{ "path": "./tsconfig.node.json" }]

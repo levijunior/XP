@@ -21,11 +21,12 @@ const Title = styled('h3', {
 });
 
 const CardsList = styled('div', {
-  display: 'flex',
   margin: '0 -$2',
+  display: 'flex',
+  flexFlow: 'wrap',
 });
 
-function CardsContainer({ children, title }: Props) {
+function CardsWapper({ children, title }: Props) {
   return (
     <Wapper>
       {title && <Title>{title}</Title>}
@@ -36,4 +37,4 @@ function CardsContainer({ children, title }: Props) {
   );
 }
 
-export default CardsContainer;
+export default CardsWapper;

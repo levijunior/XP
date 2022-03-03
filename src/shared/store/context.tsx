@@ -4,10 +4,10 @@ import {
 import { reducer } from './reducer';
 
 type State = {
-  code: boolean;
+  code: string;
 };
 type Action = {
-  type: 'SET_CODE';
+  type: 'SET_CODE' | 'SET_TOKEN' | 'SEARCH';
   payload: any;
 };
 type Dispatch = (action: Action) => void;

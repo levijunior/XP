@@ -1,9 +1,9 @@
 import getAuthCode from './getCode';
 import getToken from './getToken';
-import search from './search';
+import getSearchResults from './search';
 
 export {
   getAuthCode,
   getToken,
-  search
+  getSearchResults,
 };

@@ -4,12 +4,15 @@ const CardWapper = styled('div', {
   padding: '$3',
   margin: '$2',
   width: 180,
-  height: 280,
+  minHeight: 300,
   backgroundColor: 'rgba(255, 255, 255, .05)',
   borderRadius: 5,
   transition: 'background-color .3s ease',
   cursor: 'pointer',
   boxSizing: 'border-box',
+  display: 'flex',
+  flexDirection: 'column',
+  flexGrow: 0,
 
   '&:hover': {
     backgroundColor: 'rgba(255, 255, 255, .1)',
@@ -45,19 +48,20 @@ const Title = styled('p', {
   defaultVariants: {
     color: 'album',
   },
+  marginBottom: 0,
 });
 
-function Card() {
+function Card({ album, artist, image }: {album: string, artist: string, image: string}) {
   return (
     <CardWapper>
       <CardImg>
-        <img src="https://picsum.photos/200" alt="Album Cover" />
+        <img src={image} alt="Album Cover" />
       </CardImg>
       <Title>
-        Nome do Álbum
+        {album}
       </Title>
       <Title color="artist">
-        Nome do Artista
+        {artist}
       </Title>
     </CardWapper>
   );
