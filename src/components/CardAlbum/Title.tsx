@@ -1,14 +1,14 @@
 import { styled } from '$themes';
 
 export const Title = styled('p', {
-  fontSize: '12px',
+  fontSize: '$2',
   variants: {
     color: {
       album: {
-        color: '#FAFAFA',
+        color: '$light1',
       },
       artist: {
-        color: '#999',
+        color: '$light3',
       },
     },
   },

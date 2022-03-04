@@ -6,14 +6,14 @@ const Input = styled('input', {
   display: 'inline-flex',
   alignItems: 'center',
   padding: '$4 0',
-  fontSize: 18,
+  fontSize: '$6',
   color: 'white',
   backgroundColor: 'transparent',
   boxSizing: 'border-box',
-  borderBottom: '2px solid #999',
+  borderBottom: '2px solid $light3',
 
   '&:focus': {
-    borderColor: '#FAFAFA',
+    borderColor: '$light1',
   },
 });
 
