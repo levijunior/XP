@@ -1,5 +1,6 @@
 import React from 'react';
 import { globalCss } from '@stitches/react';
+import { ContextProvider } from '$context';
 import Routes from './Routes';
 
 const globalStyles = globalCss({
@@ -16,6 +17,8 @@ export default React.memo(() => {
   globalStyles();
 
   return (
-    <Routes />
+    <ContextProvider>
+      <Routes />
+    </ContextProvider>
   );
 });

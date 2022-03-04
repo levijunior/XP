@@ -9,7 +9,7 @@ import Dashboard from '../pages/Dashboard';
 export default memo(() => {
   const { state } = useAppContext();
 
-  const useAuthRoute = (element: JSX.Element) => {
+  const authRoute = (element: JSX.Element) => {
     if (state.token?.access_token) return element;
     return <Auth />;
   };
@@ -18,7 +18,7 @@ export default memo(() => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Auth />} />
-        <Route path="/dashboard" element={useAuthRoute(<Dashboard />)} />
+        <Route path="/dashboard" element={authRoute(<Dashboard />)} />
         <Route path="*" element={<Navigate to="/dashboard" />} />
       </Routes>
     </BrowserRouter>
