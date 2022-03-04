@@ -19,7 +19,12 @@ export default function CardsContainer() {
 
   return (
     <CardsWapper title={`Resultados buscados para "${state.search.query}"`}>
-      {state.search.items.map((item) => {
+      {state.search.items.map((item: {
+        artists: { name: string; }[];
+        uri: React.Key;
+        name: string;
+        images: { url: string; }[];
+      }) => {
         const artistis = item.artists.map((artist) => (
           artist.name
         ));

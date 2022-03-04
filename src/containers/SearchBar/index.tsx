@@ -17,7 +17,11 @@ export default React.memo(() => {
           if (res?.data) {
             await dispatch({
               type: SEARCH,
-              search: { ...state.search, items: res.data.albums?.items, query: searchQuery },
+              search: {
+                ...state.search,
+                items: res.data.albums?.items,
+                query: searchQuery,
+              },
             });
           }
         });

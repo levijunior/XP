@@ -16,7 +16,7 @@ const ButtonStyle = styled('button', {
   cursor: 'pointer',
 });
 
-export function ClearButton({handleClear}) {
+export function ClearButton({ handleClear }) {
   return (
     <ButtonStyle onClick={() => handleClear()}>
       <svg width="10" height="10" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
