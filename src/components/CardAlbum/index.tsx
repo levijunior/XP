@@ -2,7 +2,9 @@ import { CardWapper } from './CardWapper';
 import { CardImg } from './CardImg';
 import { Title } from './Title';
 
-function Card({ album, artist, image }: {album: string, artist: string, image: string}) {
+function Card({ album, artist, image }: {
+  album: string, artist: string, image: string
+}) {
   return (
     <CardWapper>
       <CardImg>

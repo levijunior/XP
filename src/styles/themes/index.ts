@@ -16,7 +16,7 @@ export const {
       light1: '#f0f0f0',
       light2: '#cccccc',
       light3: '#b8b8b8',
-      light4: '#ffffff',
+      light4: '#FFFFFF',
       dark1: '#666666',
       dark2: '#3D3D3D',
       dark3: '#1F1F1F',

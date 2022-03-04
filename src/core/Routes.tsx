@@ -5,6 +5,7 @@ import {
 import { useAppContext } from '$context';
 import Auth from '../pages/Auth';
 import Dashboard from '../pages/Dashboard';
+import Album from '../pages/Album';
 
 export default memo(() => {
   const { state } = useAppContext();
@@ -19,6 +20,7 @@ export default memo(() => {
       <Routes>
         <Route path="/" element={<Auth />} />
         <Route path="/dashboard" element={authRoute(<Dashboard />)} />
+        <Route path="/album" element={authRoute(<Album />)} />
         <Route path="*" element={<Navigate to="/dashboard" />} />
       </Routes>
     </BrowserRouter>

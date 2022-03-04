@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CardsWapper, CardAlbum } from '$components';
 import { useAppContext } from '$context';
+import { css } from '@stitches/react';
+
+const link = css({ textDecoration: 'none' });
 
 export default function CardsContainer() {
   const { state } = useAppContext();
@@ -29,12 +33,14 @@ export default function CardsContainer() {
           artist.name
         ));
         return (
-          <CardAlbum
-            key={item.uri}
-            album={item.name}
-            artist={artistis.join().replace(',', ', ')}
-            image={item.images[1]?.url}
-          />
+          <Link to="/album" className={link()}>
+            <CardAlbum
+              key={item.uri}
+              album={item.name}
+              artist={artistis.join().replace(',', ', ')}
+              image={item.images[1]?.url}
+            />
+          </Link>
         );
       })}
     </CardsWapper>
